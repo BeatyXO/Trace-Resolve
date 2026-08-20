@@ -13,4 +13,4 @@
 
 ## If you are a coding agent
 
-Read `AGENT_PROMPT.md` and follow it exactly.
+Use the project documentation and run `npm test` before submission.

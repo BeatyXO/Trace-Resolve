@@ -1,10 +1,8 @@
-# Deployment
+# Deployment (optional)
 
-## GitHub Pages
+The submission does not require a live deployment. The `docs/` directory contains a static showcase and loading-state demo that can optionally be published using GitHub Pages or another static host.
 
-This repository is prepared to deploy directly from the `docs` folder.
-
-After pushing to GitHub:
+If GitHub Pages is used later:
 
 1. Open the repository.
 2. Go to **Settings**.
@@ -14,7 +12,7 @@ After pushing to GitHub:
 6. Select folder **/docs**.
 7. Save.
 
-Expected URLs:
+The expected URLs would be:
 
 ```text
 https://beatyxo.github.io/Trace-Resolve/
@@ -22,4 +20,4 @@ https://beatyxo.github.io/Trace-Resolve/loading.html
 https://beatyxo.github.io/Trace-Resolve/trace-resolve.svg
 ```
 
-The published repository is https://github.com/BeatyXO/Trace-Resolve.
+These are optional deployment URLs, not currently live URLs.

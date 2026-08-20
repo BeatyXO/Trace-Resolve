@@ -6,11 +6,6 @@
 
 <p align="center"><b>The GenLayer mark resolves into alignment, then a pale pink-white highlight travels through the mark itself.</b></p>
 
-<p align="center">
-  <a href="https://beatyxo.github.io/Trace-Resolve/">Live Showcase</a> ·
-  <a href="https://beatyxo.github.io/Trace-Resolve/loading.html">Loading States</a>
-</p>
-
 Trace Resolve is an original animated loading spinner for the GenLayer Portal community spinner task.
 
 The design keeps the **GenLayer mark as the dominant visual element**. The three geometric pieces begin only a few pixels apart, align into a resolved state, and then a bright pink-white trace sweeps through the logo. The supporting motion never grows outside the mark or competes with it.
@@ -22,8 +17,8 @@ The design keeps the **GenLayer mark as the dominant visual element**. The three
 | `src/trace-resolve.svg` | Canonical standalone animated SVG |
 | `src/trace-resolve.css` | Reusable CSS animation |
 | `src/TraceResolveSpinner.tsx` | React + TypeScript wrapper |
-| `docs/trace-resolve.svg` | Exact live production SVG |
-| `docs/index.html` | GitHub Pages showcase |
+| `docs/trace-resolve.svg` | Exact production SVG copy |
+| `docs/index.html` | Static showcase |
 | `docs/loading.html` | Real loading-state examples |
 | `assets/trace-resolve-preview.gif` | Animated GitHub preview |
 | `assets/trace-resolve-keyframes.png` | Motion keyframes |
@@ -69,7 +64,7 @@ There is no continuous 360-degree rotation and no large external orbit.
 
 ## Sizes
 
-The live showcase tests the exact SVG at:
+The showcase tests the exact SVG at:
 
 - 16px
 - 20px
@@ -128,13 +123,9 @@ npm test
 
 The package has no runtime dependencies for the standalone SVG or showcase pages.
 
-## Deployment
+## Optional demo deployment
 
-GitHub Pages should publish from:
-
-`main /docs`
-
-See `DEPLOYMENT.md`.
+The `docs/` folder contains a ready-to-host showcase and loading-state demo. It can be served locally or deployed to any static host if desired. See `DEPLOYMENT.md` for optional instructions.
 
 ## License
 
