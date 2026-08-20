@@ -1,3 +1,7 @@
+
+> genlayer-trace-resolve-spinner@1.0.0 test
+> node tests/validate.mjs
+
 PASS  canonical SVG hash locked
 PASS  preview GIF hash locked
 PASS  src/docs SVG byte-identical
@@ -19,5 +23,6 @@ PASS  all target sizes exist
 PASS  README documents reduced motion
 PASS  README documents React
 PASS  DESIGN documents trace timing
+PASS  React gradient regression fixed
 
-21/21 checks passed.
+22/22 checks passed.

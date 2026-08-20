@@ -32,8 +32,6 @@ The design keeps the **GenLayer mark as the dominant visual element**. The three
 | `DEPLOYMENT.md` | GitHub Pages deployment instructions |
 | `SOURCE_INTEGRITY.md` | Canonical asset rules |
 | `tests/validate.mjs` | Structural validation suite |
-| `AGENT_PROMPT.md` | Exact handoff instructions for a coding agent |
-
 ## Visual direction
 
 Base mark:
