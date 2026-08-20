@@ -3,7 +3,7 @@
 ## If you are the repository owner
 
 1. Rename the repository if needed.
-2. Replace all `YOUR_GITHUB_USERNAME` and `YOUR_REPO_NAME` placeholders.
+2. Use the published links in the project documentation.
 3. Run `npm test`.
 4. Open `docs/index.html` locally and visually inspect the spinner.
 5. Commit and push.

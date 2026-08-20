@@ -7,10 +7,6 @@
   overflow:visible;
 }
 
-.genlayer-trace-resolve .gl-piece{
-  fill:url(#gl-pink-logo);
-}
-
 .genlayer-trace-resolve .gl-left{
   animation:gl-left-resolve var(--gl-spinner-duration) ease-in-out infinite;
 }

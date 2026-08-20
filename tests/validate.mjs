@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 
-const [srcSvgBuffer, docsSvgBuffer, gifBuffer, showcase, loading, readme, design] = await Promise.all([
+const [srcSvgBuffer, docsSvgBuffer, gifBuffer, showcase, loading, readme, design, react, css] = await Promise.all([
   readFile(new URL("../src/trace-resolve.svg", import.meta.url)),
   readFile(new URL("../docs/trace-resolve.svg", import.meta.url)),
   readFile(new URL("../assets/trace-resolve-preview.gif", import.meta.url)),
@@ -9,6 +9,8 @@ const [srcSvgBuffer, docsSvgBuffer, gifBuffer, showcase, loading, readme, design
   readFile(new URL("../docs/loading.html", import.meta.url), "utf8"),
   readFile(new URL("../README.md", import.meta.url), "utf8"),
   readFile(new URL("../DESIGN.md", import.meta.url), "utf8"),
+  readFile(new URL("../src/TraceResolveSpinner.tsx", import.meta.url), "utf8"),
+  readFile(new URL("../src/trace-resolve.css", import.meta.url), "utf8"),
 ]);
 
 const svg = srcSvgBuffer.toString("utf8");
@@ -37,6 +39,7 @@ const checks = [
   ["README documents reduced motion", readme.toLowerCase().includes("reduced motion")],
   ["README documents React", readme.includes("TraceResolveSpinner")],
   ["DESIGN documents trace timing", design.includes("74%,100%")],
+  ["React gradient regression fixed", !css.includes("fill:url(#gl-pink-logo)") && /gl-pink-logo-\$\{uid\}/.test(react)],
 ];
 
 let failed = false;

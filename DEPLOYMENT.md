@@ -17,9 +17,9 @@ After pushing to GitHub:
 Expected URLs:
 
 ```text
-https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/
-https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/loading.html
-https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/trace-resolve.svg
+https://beatyxo.github.io/Trace-Resolve/
+https://beatyxo.github.io/Trace-Resolve/loading.html
+https://beatyxo.github.io/Trace-Resolve/trace-resolve.svg
 ```
 
-Before submission, replace the placeholders in `README.md` and this file with the final username and repository name.
+The published repository is https://github.com/BeatyXO/Trace-Resolve.

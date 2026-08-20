@@ -7,8 +7,8 @@
 <p align="center"><b>The GenLayer mark resolves into alignment, then a pale pink-white highlight travels through the mark itself.</b></p>
 
 <p align="center">
-  <a href="https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/">Live Showcase</a> ·
-  <a href="https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/loading.html">Loading States</a>
+  <a href="https://beatyxo.github.io/Trace-Resolve/">Live Showcase</a> ·
+  <a href="https://beatyxo.github.io/Trace-Resolve/loading.html">Loading States</a>
 </p>
 
 Trace Resolve is an original animated loading spinner for the GenLayer Portal community spinner task.
