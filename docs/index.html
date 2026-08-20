@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trace Resolve | GenLayer Spinner</title>
+<meta name="description" content="Trace Resolve: a pink GenLayer loading spinner built around alignment and a visible internal light sweep.">
+<style>
+*{box-sizing:border-box}
+:root{
+  --bg:#f5f0f6;--paper:#fffafd;--ink:#19131d;--muted:#776d7e;
+  --line:#ded2e2;--dark:#171219;--pink:#ff63d8;--purple:#c94df1
+}
+body{margin:0;background:radial-gradient(circle at top right,#fbe6f7 0,transparent 32%),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.shell{width:min(1120px,calc(100% - 28px));margin:auto}
+header{min-height:74px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px}
+.brand{font:800 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase}
+.badge{font:700 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#fff7fd}
+.hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(330px,.9fr);gap:30px;padding:58px 0 34px}
+.kicker{font:800 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:#8c5b82;text-transform:uppercase;letter-spacing:.12em}
+h1{font-size:clamp(60px,10vw,116px);line-height:.82;letter-spacing:-.075em;margin:14px 0 22px}
+.lead{max-width:660px;color:var(--muted);font-size:16px;line-height:1.7}
+.preview{background:linear-gradient(145deg,#251426,#120f15);border-radius:24px;min-height:390px;display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 28px 70px rgba(61,24,64,.14)}
+.preview:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:#ff63d8;filter:blur(90px);opacity:.09}
+.preview object{width:170px;height:170px;position:relative;z-index:1}
+.preview-label{position:absolute;left:18px;top:18px;color:#bba9be;font:700 10px/1 ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em}
+.rule{border-top:1px solid var(--line)}
+.section{padding:30px 0}
+.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:18px}
+.section h2{font-size:34px;letter-spacing:-.045em;margin:0}
+.section p{max-width:560px;color:var(--muted);line-height:1.6;margin:0}
+.surface-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.surface{height:250px;border:1px solid var(--line);border-radius:18px;display:grid;place-items:center;position:relative}
+.surface object{width:115px;height:115px}
+.surface.light{background:#fff}
+.surface.neutral{background:#ece7ed}
+.surface.dark{background:#151119;border-color:#2d2530}
+.tag{position:absolute;left:13px;top:13px;font:800 10px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:#807486;text-transform:uppercase}
+.size-row{display:flex;align-items:end;gap:25px;flex-wrap:wrap;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px}
+.size{display:grid;justify-items:center;gap:9px;color:#82768a;font:11px/1 ui-monospace,SFMono-Regular,Menlo,monospace}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.metric{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px}
+.metric b{display:block;margin-bottom:8px;font-size:14px}.metric span{color:var(--muted);font-size:12px;line-height:1.45}
+footer{padding:32px 0 54px;color:#877b8d;font-size:12px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.preview{min-height:330px}.surface-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.section-head{align-items:start;flex-direction:column}}
+@media(max-width:500px){h1{font-size:64px}.metrics{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header>
+  <div class="brand">GenLayer / Trace Resolve</div>
+  <div class="badge">Community Spinner</div>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="kicker">Pink loading identity</div>
+    <h1>Resolve.<br>Then shine.</h1>
+    <p class="lead">Trace Resolve keeps the GenLayer mark as the visual focus. Its three geometric pieces move only a few pixels into alignment, then a pale pink-white highlight sweeps through the resolved mark before the cycle releases and repeats.</p>
+  </div>
+  <div class="preview">
+    <span class="preview-label">Live production SVG</span>
+    <object data="trace-resolve.svg" type="image/svg+xml" aria-label="Trace Resolve spinner"></object>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="section">
+  <div class="section-head">
+    <h2>One asset. Three surfaces.</h2>
+    <p>The exact same production SVG is shown on light, neutral and dark surfaces. The mark carries its own pink-to-magenta gradient, so the spinner does not depend on monochrome inversion.</p>
+  </div>
+  <div class="surface-grid">
+    <div class="surface light"><span class="tag">Light</span><object data="trace-resolve.svg" type="image/svg+xml"></object></div>
+    <div class="surface neutral"><span class="tag">Neutral</span><object data="trace-resolve.svg" type="image/svg+xml"></object></div>
+    <div class="surface dark"><span class="tag">Dark</span><object data="trace-resolve.svg" type="image/svg+xml"></object></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Small-size proof.</h2>
+    <p>The supporting motion never grows larger than the mark. The 16–24px versions remain logo-first because the sweep is clipped inside the GenLayer geometry.</p>
+  </div>
+  <div class="size-row">
+    <div class="size"><object data="trace-resolve.svg" width="16" height="16"></object><span>16px</span></div>
+    <div class="size"><object data="trace-resolve.svg" width="20" height="20"></object><span>20px</span></div>
+    <div class="size"><object data="trace-resolve.svg" width="24" height="24"></object><span>24px</span></div>
+    <div class="size"><object data="trace-resolve.svg" width="32" height="32"></object><span>32px</span></div>
+    <div class="size"><object data="trace-resolve.svg" width="48" height="48"></object><span>48px</span></div>
+    <div class="size"><object data="trace-resolve.svg" width="64" height="64"></object><span>64px</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="metrics">
+    <div class="metric"><b>1.65s</b><span>full infinite cycle</span></div>
+    <div class="metric"><b>3 pieces</b><span>subtle alignment motion</span></div>
+    <div class="metric"><b>Internal sweep</b><span>highlight never leaves the mark</span></div>
+    <div class="metric"><b>Reduced motion</b><span>static resolved state when requested</span></div>
+  </div>
+</section>
+
+<footer>Trace Resolve — original GenLayer community loading spinner concept.</footer>
+</div>
+</body>
+</html>

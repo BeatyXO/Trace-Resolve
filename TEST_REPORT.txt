@@ -1,0 +1,23 @@
+PASS  canonical SVG hash locked
+PASS  preview GIF hash locked
+PASS  src/docs SVG byte-identical
+PASS  canonical 400x400 viewBox
+PASS  three GenLayer polygons present
+PASS  pink palette present
+PASS  high-contrast trace present
+PASS  trace clipped inside mark
+PASS  infinite loop present
+PASS  default duration present
+PASS  no orbit animation
+PASS  reduced motion supported
+PASS  showcase uses exact SVG
+PASS  loading page uses exact SVG
+PASS  light surface exists
+PASS  neutral surface exists
+PASS  dark surface exists
+PASS  all target sizes exist
+PASS  README documents reduced motion
+PASS  README documents React
+PASS  DESIGN documents trace timing
+
+21/21 checks passed.

@@ -1,0 +1,62 @@
+.genlayer-trace-resolve{
+  --gl-spinner-size:24px;
+  --gl-spinner-duration:1.65s;
+  width:var(--gl-spinner-size);
+  height:var(--gl-spinner-size);
+  display:inline-block;
+  overflow:visible;
+}
+
+.genlayer-trace-resolve .gl-piece{
+  fill:url(#gl-pink-logo);
+}
+
+.genlayer-trace-resolve .gl-left{
+  animation:gl-left-resolve var(--gl-spinner-duration) ease-in-out infinite;
+}
+
+.genlayer-trace-resolve .gl-right{
+  animation:gl-right-resolve var(--gl-spinner-duration) ease-in-out infinite;
+}
+
+.genlayer-trace-resolve .gl-core{
+  animation:gl-core-resolve var(--gl-spinner-duration) ease-in-out infinite;
+}
+
+.genlayer-trace-resolve .gl-sweep{
+  transform:translateX(-260px) skewX(-12deg);
+  transform-origin:center;
+  animation:gl-sweep var(--gl-spinner-duration) ease-in-out infinite;
+}
+
+@keyframes gl-left-resolve{
+  0%,100%{transform:translate(-7px,3px)}
+  34%,76%{transform:translate(0,0)}
+}
+
+@keyframes gl-right-resolve{
+  0%,100%{transform:translate(7px,3px)}
+  34%,76%{transform:translate(0,0)}
+}
+
+@keyframes gl-core-resolve{
+  0%,100%{transform:translate(0,6px)}
+  34%,76%{transform:translate(0,0)}
+}
+
+@keyframes gl-sweep{
+  0%,33%{transform:translateX(-260px) skewX(-12deg);opacity:0}
+  38%{opacity:1}
+  68%{transform:translateX(520px) skewX(-12deg);opacity:1}
+  74%,100%{transform:translateX(520px) skewX(-12deg);opacity:0}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .genlayer-trace-resolve .gl-piece{
+    animation:none!important;
+    transform:none!important;
+  }
+  .genlayer-trace-resolve .gl-sweep{
+    display:none!important;
+  }
+}

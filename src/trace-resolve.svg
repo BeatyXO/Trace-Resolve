@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="status" aria-label="Loading">
+<defs>
+  <linearGradient id="pinkLogo" x1="70" y1="45" x2="330" y2="350" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#FF63D8"/>
+    <stop offset="52%" stop-color="#E857F4"/>
+    <stop offset="100%" stop-color="#C94DF1"/>
+  </linearGradient>
+  <linearGradient id="sweepFill" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FFD6F3" stop-opacity="0"/>
+    <stop offset="22%" stop-color="#FFD6F3" stop-opacity=".55"/>
+    <stop offset="44%" stop-color="#FFF4FC" stop-opacity=".95"/>
+    <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1"/>
+    <stop offset="56%" stop-color="#FFF4FC" stop-opacity=".95"/>
+    <stop offset="78%" stop-color="#FFD6F3" stop-opacity=".55"/>
+    <stop offset="100%" stop-color="#FFD6F3" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="markClip">
+    <polygon points="183,33 20,372 179,310 122,279 183,152"/>
+    <polygon points="218,33 218,151 280,281 222,310 382,373"/>
+    <polygon points="200,195 166,265 200,283 235,266"/>
+  </clipPath>
+</defs>
+<style>
+  svg{overflow:visible}
+  .piece{fill:url(#pinkLogo)}
+  .left{animation:leftResolve 1.65s ease-in-out infinite}
+  .right{animation:rightResolve 1.65s ease-in-out infinite}
+  .core{animation:coreResolve 1.65s ease-in-out infinite}
+  .sweep{transform:translateX(-260px) skewX(-12deg);transform-origin:center;animation:sweep 1.65s ease-in-out infinite}
+  @keyframes leftResolve{0%,100%{transform:translate(-7px,3px)}34%,76%{transform:translate(0,0)}}
+  @keyframes rightResolve{0%,100%{transform:translate(7px,3px)}34%,76%{transform:translate(0,0)}}
+  @keyframes coreResolve{0%,100%{transform:translate(0,6px)}34%,76%{transform:translate(0,0)}}
+  @keyframes sweep{0%,33%{transform:translateX(-260px) skewX(-12deg);opacity:0}38%{opacity:1}68%{transform:translateX(520px) skewX(-12deg);opacity:1}74%,100%{transform:translateX(520px) skewX(-12deg);opacity:0}}
+  @media(prefers-reduced-motion:reduce){.piece{animation:none!important;transform:none!important}.sweep{display:none!important}}
+</style>
+<polygon class="piece left" points="183,33 20,372 179,310 122,279 183,152"/>
+<polygon class="piece right" points="218,33 218,151 280,281 222,310 382,373"/>
+<polygon class="piece core" points="200,195 166,265 200,283 235,266"/>
+<g clip-path="url(#markClip)">
+  <rect class="sweep" x="0" y="-30" width="92" height="460" fill="url(#sweepFill)"/>
+</g>
+</svg>
